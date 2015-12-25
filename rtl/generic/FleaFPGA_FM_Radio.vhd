@@ -53,7 +53,7 @@ port (
 
 --	GPIO5: BUFFER  STD_LOGIC;
 
-    LED: BUFFER  STD_LOGIC_VECTOR(3 downto 0) -- to user LEDs on FleaFPGA
+    LED: BUFFER  STD_LOGIC_VECTOR(7 downto 0) -- to user LEDs on FleaFPGA
 );
 
 END FleaFPGA_FM_Radio;  
@@ -147,7 +147,7 @@ PWM0 : entity work.simple_PWM
 
 -- **** Our combinatorial Logic goes here: ****
 
-LED <= K_mod_control(15 downto 12); -- When user changes frequency, LEDs will blink
+LED <= K_mod_control(20 downto 13); -- When user changes frequency, LEDs will blink
 
 -- Convert audio filtered output (signed value) to unsigned as required by the PWM module
 lpf_output3 <= unsigned(signed(lpf_output(11 downto 0)) + 2047);
