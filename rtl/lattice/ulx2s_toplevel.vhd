@@ -77,7 +77,7 @@ begin
   fm_antenna <= j2_16; -- external pin, FM signal enters here
   digital_fm_radio: entity work.FleaFPGA_FM_Radio
   port map (
-      rst => btn_down,
+      rst => btn_center,
       clk => clk_25m,
       LED => n_led,
       PWM_Q => both_audio_channels, -- Mono Audio out
