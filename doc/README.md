@@ -2,9 +2,9 @@
 
 Files that are included in the FleaFPGA_oscilloscope_v1-FLASH_Prgm.zip file:
 
-1.) This readme file
-2.) Circuit schematic (PDF) for wiring to the GPIO header.
-3.) The necessary demo bitfile for the MachXO2 FPGA itself
+- 1.) This readme file
+- 2.) Circuit schematic (PDF) for wiring to the GPIO header.
+- 3.) The necessary demo bitfile for the MachXO2 FPGA itself
 
 
 How the FM Radio example works:
@@ -12,18 +12,18 @@ How the FM Radio example works:
 Basically, this example attempts to recreate (successfully) the inner 
 workings of a classic single-conversion superhet receiver with the 
 following internal stages implemented using VHDL:
-1.) RF Mixer and local oscillator (Converts the incoming ~100MHz down to 500kHz)
-2.) IF stage (Essentially a bandpass filter with a center frequency of 500kHz)
-3.) PLL demodulator stage 
-4.) Audio low-pass filter stage
-5.) PWM output stage
+- 1.) RF Mixer and local oscillator (Converts the incoming ~100MHz down to 500kHz)
+- 2.) IF stage (Essentially a bandpass filter with a center frequency of 500kHz)
+- 3.) PLL demodulator stage 
+- 4.) Audio low-pass filter stage
+- 5.) PWM output stage
 
 
 How to use the FleaFPGA FM Radio (Assuming you have constructed the circuit
 outlined in the schematic PDF):
 
-User Button#1 = Increments Local oscillator frequency
-User Button#2 = Decrements Local oscillator frequency
+- User Button#1 = Increments Local oscillator frequency
+- User Button#2 = Decrements Local oscillator frequency
 
 Notes:
 - Upon power-up/reset, the FM radio defaults to (roughly) around 91.3MHz
