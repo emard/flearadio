@@ -1,5 +1,4 @@
-FleaFPGA Digital FM Radio example v1.1!
----------------------------------------
+# FleaFPGA Digital FM Radio example v1.1!
 
 Files that are included in the FleaFPGA_oscilloscope_v1-FLASH_Prgm.zip file:
 
