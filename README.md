@@ -1,8 +1,8 @@
 # FPGA FM RADIO
 
-FM radio receiver for FPGA with only
-digital I/O (no ADC) and simple RLC 
-network.
+FM radio receiver for FPGA with simple
+RLC network and analog comparator 
+(available on-chip, no ADC required).
 
 
 # CREDITS
