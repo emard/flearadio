@@ -74,7 +74,7 @@ begin
   n_pb2 <= not btn_right;
   led(3 downto 0) <= not n_led(3 downto 0);
 
-  fm_antenna <= j1_2; -- external pin, FM signal enters here
+  fm_antenna <= j2_16; -- external pin, FM signal enters here
   digital_fm_radio: entity work.FleaFPGA_FM_Radio
   port map (
       rst => btn_down,
