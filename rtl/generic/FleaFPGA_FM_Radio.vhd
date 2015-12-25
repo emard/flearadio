@@ -147,7 +147,7 @@ PWM0 : entity work.simple_PWM
 
 -- **** Our combinatorial Logic goes here: ****
 
-LED <= (others => '1'); -- Disable user LED's
+LED <= K_mod_control(15 downto 12); -- When user changes frequency, LEDs will blink
 
 -- Convert audio filtered output (signed value) to unsigned as required by the PWM module
 lpf_output3 <= unsigned(signed(lpf_output(11 downto 0)) + 2047);
