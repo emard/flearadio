@@ -79,10 +79,7 @@ begin
   port map (
       rst => btn_down,
       clk => clk_25m,
-      LED_1 => n_led(0),
-      LED_2 => n_led(1),
-      LED_3 => n_led(2),
-      LED_4 => n_led(3),
+      LED => n_led,
       PWM_Q => both_audio_channels, -- Mono Audio out
       Sampler_D => fm_antenna, -- FM in
       push_button1 => n_pb1,

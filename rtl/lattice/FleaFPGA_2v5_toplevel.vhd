@@ -146,10 +146,10 @@ Audio_r <= both_audio_channels;
     port map(
 		rst => sys_reset,
 		clk => sys_clock,
-		LED_1 => n_led1,
-		LED_2 => n_led2,
-		LED_3 => n_led3,
-		LED_4 => n_led4,
+		LED(0) => n_led1,
+		LED(1) => n_led2,
+		LED(2) => n_led3,
+		LED(3) => n_led4,
 		PWM_Q => both_audio_channels, -- Mono Audio out
 		Sampler_D => GPIO1(1),
 		push_button1 => n_pb1,  
