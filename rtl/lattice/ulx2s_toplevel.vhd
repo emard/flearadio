@@ -69,9 +69,10 @@ architecture arch of ulx2s_fm_radio is
   signal n_led: std_logic_vector(7 downto 0);
   signal fm_antenna: std_logic;
 begin
-  -- invert buttons and leds to fit FleaFPGA logic
-  n_pb1 <= not btn_left;
-  n_pb2 <= not btn_right;
+  -- invert ulx2s buttons to fit FleaFPGA inverted logic
+  n_pb1 <= not btn_right;
+  n_pb2 <= not btn_left;
+
   led <= n_led;
 
   fm_antenna <= j2_16; -- external pin, FM signal enters here
@@ -82,8 +83,8 @@ begin
       LED => n_led,
       PWM_Q => both_audio_channels, -- Mono Audio out
       Sampler_D => fm_antenna, -- FM in
-      push_button1 => n_pb1,
-      push_button2 => n_pb2
+      push_button1 => n_pb1, -- frequency up
+      push_button2 => n_pb2  -- frequency down
   );
   -- output audio to 3.5mm jack
   p_ring   <= both_audio_channels;
